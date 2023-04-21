@@ -3,7 +3,7 @@ using namespace std;
 
 #define delimiter "\n-------------------------------------------"
 
-void Exchange(int a, int b);
+void Exchange(int& a, int& b);
 
 void main()
 {
@@ -12,7 +12,7 @@ void main()
 	int a = 2, b = 3;
 	cout << a << "\t" << b << endl;
 	cout << &a << "\t" << &b << endl;
-	cout << delimiter << endl;
+	cout << delimiter << endl; 
 	Exchange(a, b);
 	cout << delimiter << endl;
 	cout << a << "\t" << b << endl;
@@ -20,7 +20,7 @@ void main()
 
 }
 
-void Exchange(int a, int b)
+void Exchange(int& a, int& b)
 {
 	cout << &a << "\t" << &b << endl;
 	int buffer = a;
