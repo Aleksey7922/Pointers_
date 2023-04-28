@@ -16,6 +16,8 @@ void main()
 	int* even = new int[e];
 	int o = 0;
 	int* odd = new int[o];
+	int even_count = 0;
+	int odd_count = 0;
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 100;
